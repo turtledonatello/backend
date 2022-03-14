@@ -1,0 +1,1 @@
+[{"title":"Iphone X","price":150000,"thumbnail":"url:example","id":1},{"title":"Iphone 7","price":120000,"thumbnail":"url:example","id":2},{"title":"Macbook","price":500000,"thumbnail":"url:example","id":3}]

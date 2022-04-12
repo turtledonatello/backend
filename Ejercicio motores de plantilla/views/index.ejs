@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Agregar productos</h1>
+    <form method="POST" action="/products" enctype="multipart/form-data">
+      <input
+        type="text"
+        placeholder="Ingresa un producto"
+        name="name"
+        id="name"
+      />
+      <input
+        type="number"
+        placeholder="Ingresa un precio"
+        name="price"
+        id="price"
+      />
+      <input type="file" name="file" id="file" />
+      <input type="submit" value="Agregar" />
+    </form>
+
+    <% products.forEach(product => { %>
+    <li><%= product.name %></li>
+    <% }) %>
+    <script src="index.js"></script>
+  </body>
+</html>
